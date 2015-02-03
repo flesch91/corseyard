@@ -1,0 +1,129 @@
+// Variables
+// =============
+$brand-primary:             darken(#428bca, 6.5%) !default; // #337ab7
+$list-inline-margin-left:   -5px !default;
+$list-inline-padding-items: 0 5px !default;
+
+
+// Show grid
+.show-grid [class^=col-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+// Floats
+// -------------------------
+.clearfix {
+  @include clearfix;
+}
+.center-block {
+  @include center-block;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+// Typography
+// -------------
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+
+// Contextual colors
+.text-muted {color: $text-muted;}
+
+@include text-emphasis-variant('.text-primary', $brand-primary);
+@include text-emphasis-variant('.text-success', $state-success-text);
+@include text-emphasis-variant('.text-info', $state-info-text);
+@include text-emphasis-variant('.text-warning', $state-warning-text);
+@include text-emphasis-variant('.text-danger', $state-danger-text);
+
+// Contextual backgrounds
+
+.bg-primary          {color: #fff;}
+@include bg-variant('.bg-primary', $brand-primary);
+@include bg-variant('.bg-success', $state-success-bg);
+@include bg-variant('.bg-info', $state-info-bg);
+@include bg-variant('.bg-warning', $state-warning-bg);
+@include bg-variant('.bg-danger', $state-danger-bg);
+
+
+
+// List options
+.list-unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: $list-inline-margin-left;
+
+  > li {
+    display: inline-block;
+    padding: $list-inline-padding-items;
+  }
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow;
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
+  }
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only
+.hide               {display: none !important;}
+.show               {display: block !important;}
+.invisible          {visibility: hidden;}
+
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}

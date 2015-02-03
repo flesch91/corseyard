@@ -1,0 +1,82 @@
+// Variables Home page
+// ===================
+
+$header-bar-bg:     #efefef;
+
+.page-home {
+  header{
+    background: $header-bar-bg;
+    padding-top: 8px;
+  }
+  .header-logo{
+    width: 140px;
+    height: 34px;
+    margin: 0 auto;
+    a{
+      width: 140px;
+      height: 34px;
+      display: block;
+      background: url("project/logo/logo.png") no-repeat;
+    }
+  }
+  .header-search-form{
+    border: 1px solid $gray-border;
+    float: left;
+
+    input{
+      border: none;
+      padding: 8px 17px;
+    }
+
+    input[type="text"]{
+      background: none;
+      padding: 8px 10px;
+      width: 153px;
+      float: left;
+    }
+
+    input[type="submit"]{
+      float: left;
+      background: url('base/icon/i-search.png') center center no-repeat;
+    }
+  }
+
+  // Dropdown menu
+  //--------------
+  .header-menu-dropdown-list{
+    border: 1px solid $gray-border;
+    display: inline-block;
+    float: left;
+    height: 37px;
+    width: 37px;
+    margin-right: 8px;
+    background: url('base/icon/menu.svg') 0 0 no-repeat;
+  }
+
+  // Header menu
+  //---------------
+  .header-user-menu{
+    @include list-unstyled;
+
+    li{
+      display: inline-block;
+      margin: 0 9px;
+
+      a{
+        border-bottom: none;
+        display: inline-block;
+        color: $text-color;
+        text-transform: uppercase;
+        padding: 9px 12px;
+        transition: all .1s;
+
+        &:hover{
+          background: #3ba4ec;
+          border-bottom: none;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
