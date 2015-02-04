@@ -3,5 +3,97 @@
 
 .page-home {
 
+  .header-logo{}
 
+//  Main links
+  .header-menu{
+    margin-top: 2%;
+    a{
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+// Section content
+  .section-name-site{
+    text-align: center;
+
+    h1,
+    h3{
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1{
+      font-size: -em(120,14);
+      line-height: 120px;
+    }
+    h3{
+      font-size: -em(70,14);
+      line-height: 100px;
+    }
+  }
+
+  .section-form-email{
+    text-align: center;
+    input[type="text"]{
+      background: none;
+      border: 2px solid $text-color;
+      border-radius: 40px;
+      height: 80px;
+      padding: 0 82px 0 35px;
+      font-size: -em(26,14);
+      text-transform: uppercase;
+        @include placeholder {
+          color: #9599a3;
+          font-weight:600;
+          text-transform: uppercase;
+        }
+       &:focus {outline:none;}
+    }
+    button{
+      position: relative;
+      top: 1px;
+      width: 342px;
+      height: 80px;
+      border: none;
+      color: #fff;
+      font-size: -em(30,14);
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-left: -80px;
+      @include border-radius(40px);
+      background: #579feb;
+      transition: background .2s;
+        &:hover{
+          background: #5491d7;
+        }
+    }
+    .text-help{
+      margin-top: 15px;
+      color: #acb0b8;
+      font-size: -em(20,14);
+    }
+  }
+  .section-ipad{
+    width: 1000px;
+    height: 800px;
+    background: url("../images/ipad_l.jpg")  no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .footer{
+    padding: 106px 0 46px 0;
+    background: #24252c;
+    color: #e7ecee;
+    text-align: center;
+    font-weight: 800;
+    line-height: 20px;
+
+    .copyright{
+      color: #74767e;
+      margin-top: 15px;
+    }
+  }
 }
