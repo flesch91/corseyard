@@ -3,12 +3,25 @@
 
 .page-home {
 
-  .header-logo{}
+  header{
+    margin-bottom: 6%;
+  }
+  .header-logo{
+    margin-top: -40px;
+    float: left;
 
+    a{display: block}
+  }
 //  Main links
   .header-menu{
-    margin-top: 2%;
+    margin-top: 60px;
+    ul{margin-bottom: 0; }
+    li{
+      padding: 0 1.5%;
+      float: right;
+    }
     a{
+      display: inline-block;
       font-weight: 800;
       text-transform: uppercase;
     }
@@ -17,7 +30,7 @@
 // Section content
   .section-name-site{
     text-align: center;
-
+    margin-bottom: 20px;
     h1,
     h3{
       font-weight: 800;
@@ -27,6 +40,9 @@
     h1{
       font-size: -em(120,14);
       line-height: 120px;
+      //color: #58595B;
+
+      //  span{color: #48b749}
     }
     h3{
       font-size: -em(70,14);
@@ -36,11 +52,12 @@
 
   .section-form-email{
     text-align: center;
+    margin-bottom: 63px;
     input[type="text"]{
       background: none;
       border: 2px solid $text-color;
       border-radius: 40px;
-      height: 80px;
+      height: 79px;
       padding: 0 82px 0 35px;
       font-size: -em(26,14);
       text-transform: uppercase;
@@ -63,10 +80,10 @@
       text-transform: uppercase;
       margin-left: -80px;
       @include border-radius(40px);
-      background: #579feb;
+      background: #2eaf33;
       transition: background .2s;
         &:hover{
-          background: #5491d7;
+          background: #289c2d;
         }
     }
     .text-help{
@@ -76,13 +93,136 @@
     }
   }
   .section-ipad{
-    width: 1000px;
-    height: 800px;
-    background: url("../images/ipad_l.jpg")  no-repeat;
-    background-size: cover;
-    margin: 0 auto;
+    width: 100%;
+      img{
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        left: -30px;
+      }
+  }
+// Section Services box
+
+  .section-services-box-shadow{
+    position: relative;
+
+    .box-shadow-l{
+      border-radius: 4px;
+      background-color: rgba(241, 245, 247, 0);
+      box-shadow: 0 25.981px 40px 0 rgba(31, 35, 39, 0.2);
+      position: absolute;
+      margin: 0 1%;
+      top: 0;
+      width: 98%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  .section-services-box{
+    background: #f1f5f7;
+    padding: 7% 7% 16%;
+    margin-bottom: 8%;
+    margin-top: 87%;
+    position: relative;
+    border-radius: 4px;
+    z-index: 2;
+      h4{
+        font-size: 26px;
+      }
+      .services-h4-top{
+        margin-bottom: 5.8%;
+      }
+
+    .sections-services-icon-list{
+      margin-bottom: 10%;
+      ul{@include list-unstyled();}
+      li{
+        float: left;
+        text-align: center;
+      }
+        .icon-wrapper{
+          height: 82px;
+          width: 110px;
+          margin: 0 auto 25px;
+        }
+        .name-icon{
+          font-size: 18px;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+    }
+
+    .services-h4-video{
+      margin-bottom: 2.5%;
+    }
+    .video-cover{
+      position: relative;
+      &:before{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 50%;
+        top: 50%;
+        margin-left: -35px;
+        margin-top: -35px;
+        content: '';
+        background: url("../images/icon-play.png");
+      }
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
+// Section about
+  .box-about{
+    &{
+      position: relative;
+      overflow: hidden;
+      border: 3px solid #2eaf33;
+      cursor: pointer;
+      margin-bottom: 95px;
+    }
+    .box-about-img{
+      &:before{
+        background: rgba(80, 87, 112, 0.80);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transition: all .1s;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .box-about-title{
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 23%;
+      color: #fff;
+      transition: all .1s;
+    }
+
+    // hover
+      &:hover{
+        .box-about-img:before{
+          background: rgba(111,116,134, 0);
+        }
+
+        .box-about-title {
+          color: #2eaf33;
+        }
+      }
+  }
+
+// Footer
   .footer{
     padding: 106px 0 46px 0;
     background: #24252c;
