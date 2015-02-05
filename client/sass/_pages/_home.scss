@@ -48,7 +48,6 @@ $screen-sm-870: 870px;
 
 //  Main links
   .header-menu{
-    //margin-top: 60px;
     margin-top: -35px;
     @media (max-width: $screen-lg) {
       margin-top: 0;
@@ -157,10 +156,14 @@ $screen-sm-870: 870px;
       background: none;
       border: 2px solid $text-color;
       border-radius: 40px;
+      width: 433px;
       height: 79px;
       padding: 0 82px 0 35px;
       font-size: -em(26,14);
       text-transform: uppercase;
+      transition: all .5s;
+
+
 
       @media (max-width: $screen-sm-870) {
         width: 100%;
@@ -185,7 +188,6 @@ $screen-sm-870: 870px;
           text-transform: uppercase;
         }
        &:focus {outline:none;}
-
     }
     button{
       position: relative;
@@ -200,7 +202,7 @@ $screen-sm-870: 870px;
       margin-left: -80px;
       @include border-radius(40px);
       background: #2eaf33;
-      transition: background .2s;
+      transition: all .5s;
 
         &:hover{
           background: #289c2d;
@@ -217,6 +219,20 @@ $screen-sm-870: 870px;
       }
 
     }
+
+    //  .section-form-emai:hover
+    &.open{
+      input[type="text"]{
+        padding: 0 0 0 39px;
+        opacity: 0;
+        width: 0;
+        margin-right: -100px;
+      }
+      button{
+        margin-left: 0
+      }
+    }
+
     .text-help{
       margin-top: 15px;
       color: #acb0b8;
@@ -334,7 +350,7 @@ $screen-sm-870: 870px;
     &{
       position: relative;
       overflow: hidden;
-      border: 3px solid #2eaf33;
+      border: 3px solid transparent;
       cursor: pointer;
       margin-bottom: 95px;
 
@@ -359,17 +375,27 @@ $screen-sm-870: 870px;
       position: absolute;
       z-index: 2;
       width: 100%;
+      height: 100%;
       font-size: 30px;
       font-weight: 800;
       text-transform: uppercase;
       text-align: center;
-      padding-top: 23%;
       color: #fff;
+      display: table-cell;
+      vertical-align: middle;
       transition: all .1s;
+        span{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 50%;
+          transform: translate(0, -50%)
+        }
     }
 
     // hover
       &:hover{
+        border: 3px solid #2eaf33;
         .box-about-img:before{
           background: rgba(111,116,134, 0);
         }
