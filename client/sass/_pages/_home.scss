@@ -203,7 +203,8 @@ $screen-sm-870: 870px;
       @include border-radius(40px);
       background: #2eaf33;
       transition: all .5s;
-
+      outline: none;
+        &:focus{outline: none}
         &:hover{
           background: #289c2d;
         }
