@@ -106,7 +106,6 @@ $list-inline-padding-items: 0 5px !default;
   }
 }
 
-
 // Toggling content
 // -------------------------
 
@@ -115,6 +114,20 @@ $list-inline-padding-items: 0 5px !default;
 .show               {display: block !important;}
 .invisible          {visibility: hidden;}
 
+.collapsing{
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  transition: height .35s ease;
+}
+.collapse.in {
+  display: block;
+  visibility: visible;
+}
+.collapse {
+  display: none;
+  visibility: hidden;
+}
 
 .hidden {
   display: none !important;

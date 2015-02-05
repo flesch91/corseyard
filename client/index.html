@@ -14,27 +14,36 @@
     <![endif]-->
 </head>
 <body class="page-home">
-<div class="container-fluid">
     <header>
-        <div class="header-logo">
-            <a href="#">
-                <img width="208" src="images/logo.svg" alt="logo"/>
-            </a>
+        <div class="navbar-header clearfix">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="logo"/>
+                </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+            </button>
         </div>
-        <div class="header-menu">
-            <ul class="list-unstyled">
-                <li><a href="#">What we dO</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">For Investors</a></li>
-                <li><a href="#">Who we are</a></li>
-                <li><a href="#">Contacts & Imprint</a></li>
+
+        <div class="header-menu collapse" id="nav-collapse" aria-expanded="false">
+            <ul class="languages-list list-unstyled">
+                <li class="act"><a href="#">EN</a></li>
+                <li><a href="#">DE</a></li>
             </ul>
-            <div class="clearfix"></div>
+            <ul class="menu-list list-unstyled">
+                <li><a href="#">Contacts & Imprint</a></li>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">For Investors</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">What we dO</a></li>
+            </ul>
         </div>
         <div class="clearfix"></div>
     </header>
     <div class="clearfix"></div>
+<div class="container-fluid">
     <section>
         <div class="section-name-site">
             <h1>Course<span>Yard</span></h1>
@@ -64,19 +73,19 @@
                     </div>
                         <div class="sections-services-icon-list">
                             <ul>
-                                <li class="col-sm-4 col-md-4">
+                                <li class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="icon-wrapper">
                                         <img src="images/reading.svg" alt=""/>
                                     </div>
                                     <div class="name-icon">Reading</div>
                                 </li>
-                                <li class="col-sm-4 col-md-4">
+                                <li class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="icon-wrapper">
                                         <img src="images/learning.svg" alt=""/>
                                     </div>
                                     <div class="name-icon">Learning</div>
                                 </li>
-                                <li class="col-sm-4 col-md-4">
+                                <li class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="icon-wrapper">
                                         <img src="images/coworking.svg" alt=""/>
                                     </div>
@@ -134,11 +143,21 @@
 </section>
 <footer>
     <div class="footer">
+        <ul class="footer-socila-list list-inline">
+            <li><a href="#" class="x"></a></li>
+            <li><a href="#" class="in"></a></li>
+            <li><a href="#" class="gplus"></a></li>
+            <li><a href="#" class="f"></a></li>
+            <li><a href="#" class="t"></a></li>
+        </ul>
         COURSEYARD Gmbh,80 KÖNIGSTRASSE, STUTTGART, BW, 70173, GERMANY<br>
         +49 711 237 35 141<br>
         CONTACT@COURSEYARD.COM
         <div class="copyright">COURSEYARD © 2015</div>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/bootstrap.min.js"></script>
 </body>
 </html>
