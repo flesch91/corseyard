@@ -9,3 +9,10 @@ nameBtn.on('click', function(){
   sectionFormEmail.toggleClass('open');
 })
 
+$(window).load(function() {
+  console.log(1);
+  $(".section-services-box").css('margin-top', '-49%');
+});
+
+
+

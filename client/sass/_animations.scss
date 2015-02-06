@@ -1,0 +1,26 @@
+@-webkit-keyframes header-h1 {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+}
+
+@-webkit-keyframes header-h3 {
+  0%   {
+    letter-spacing: 0;
+    opacity: 0;
+  }
+  100% {letter-spacing: 3px;opacity: 1;}
+}
+.section-name-site {
+  h1{
+    -webkit-animation: header-h1 1s linear forwards alternate;
+    animation: header-h1 1s linear forwards alternate;
+  }
+  h3{
+    opacity: 0;
+    -webkit-animation: header-h3 1s linear 1s forwards alternate;
+    animation: header-h3 1s linear 1s forwards alternate;
+  }
+  .lt-ie9 h3{
+    opacity: 1 !important;
+  }
+}
