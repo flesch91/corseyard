@@ -435,9 +435,17 @@ $screen-sm-870: 870px;
       margin-top: 15px;
     }
   }
+  .corporation{
+     text-transform: uppercase;
+    margin-bottom: 25px;
+    a{
+      color: #0084ff;
+      text-decoration: none;
+    }
+  }
   .footer-socila-list{
     @include list-unstyled();
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     @media (max-width: $screen-xs) {
       margin-bottom: 30px;
     }

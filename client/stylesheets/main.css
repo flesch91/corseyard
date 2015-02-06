@@ -2561,6 +2561,25 @@ a.bg-danger:hover {
   position: fixed;
 }
 
+/* line 144, ../sass/_components/_utilities.scss */
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+/* line 151, ../sass/_components/_utilities.scss */
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @-webkit-keyframes header-h1 {
   0% {
     opacity: 0;
@@ -3127,28 +3146,38 @@ a.bg-danger:hover {
   margin-top: 15px;
 }
 /* line 438, ../sass/_pages/_home.scss */
+.page-home .corporation {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/* line 441, ../sass/_pages/_home.scss */
+.page-home .corporation a {
+  color: #0084ff;
+  text-decoration: none;
+}
+/* line 446, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list {
   padding-left: 0;
   list-style: none;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 @media (max-width: 480px) {
-  /* line 438, ../sass/_pages/_home.scss */
+  /* line 446, ../sass/_pages/_home.scss */
   .page-home .footer-socila-list {
     margin-bottom: 30px;
   }
 }
-/* line 444, ../sass/_pages/_home.scss */
+/* line 452, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list li {
   margin: 0 1%;
 }
 @media (max-width: 480px) {
-  /* line 444, ../sass/_pages/_home.scss */
+  /* line 452, ../sass/_pages/_home.scss */
   .page-home .footer-socila-list li {
     margin: 0;
   }
 }
-/* line 450, ../sass/_pages/_home.scss */
+/* line 458, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a {
   width: 50px;
   height: 50px;
@@ -3156,27 +3185,27 @@ a.bg-danger:hover {
   background: url("../images/sprite-social-icons.png") left top no-repeat;
   transition: all .2s;
 }
-/* line 457, ../sass/_pages/_home.scss */
+/* line 465, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a.x {
   background-position: 0 0;
 }
-/* line 460, ../sass/_pages/_home.scss */
+/* line 468, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a.in {
   background-position: -50px 0;
 }
-/* line 463, ../sass/_pages/_home.scss */
+/* line 471, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a.gplus {
   background-position: -100px 0;
 }
-/* line 466, ../sass/_pages/_home.scss */
+/* line 474, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a.f {
   background-position: -150px 0;
 }
-/* line 469, ../sass/_pages/_home.scss */
+/* line 477, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a.t {
   background-position: -200px 0;
 }
-/* line 472, ../sass/_pages/_home.scss */
+/* line 480, ../sass/_pages/_home.scss */
 .page-home .footer-socila-list a:hover {
   opacity: 0.5;
 }
