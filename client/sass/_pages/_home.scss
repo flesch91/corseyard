@@ -32,9 +32,8 @@ $screen-sm-870: 870px;
     }
   }
 
-
   .header-logo{
-    float: left;
+    //float: left;
     padding: 15px 0;
     img{
       width: 200px;
@@ -147,7 +146,7 @@ $screen-sm-870: 870px;
         line-height: 50px;
       }
       @media (max-width: $screen-xs) {
-        font-size: -em(16,14);
+        font-size: -em(12,14);
         line-height: 30px;
       }
     }
