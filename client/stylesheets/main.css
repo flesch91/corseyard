@@ -2832,7 +2832,7 @@ a.bg-danger:hover {
   margin-bottom: 63px;
 }
 /* line 172, ../sass/_pages/_home.scss */
-.page-home .section-form-email input[type="text"] {
+.page-home .section-form-email .input-text {
   background: none;
   border: 2px solid #161d3f;
   border-radius: 40px;
@@ -2846,7 +2846,7 @@ a.bg-danger:hover {
 }
 @media (max-width: 870px) {
   /* line 172, ../sass/_pages/_home.scss */
-  .page-home .section-form-email input[type="text"] {
+  .page-home .section-form-email .input-text {
     width: 100% !important;
     height: 50px;
     border-radius: 40px;
@@ -2859,7 +2859,7 @@ a.bg-danger:hover {
 }
 @media (max-width: 480px) {
   /* line 172, ../sass/_pages/_home.scss */
-  .page-home .section-form-email input[type="text"] {
+  .page-home .section-form-email .input-text {
     width: 100%;
     height: 50px;
     border-radius: 40px;
@@ -2869,55 +2869,55 @@ a.bg-danger:hover {
   }
 }
 /* line 401, ../sass/_components/_mixins.scss */
-.page-home .section-form-email input[type="text"]::-webkit-input-placeholder {
+.page-home .section-form-email .input-text::-webkit-input-placeholder {
   color: #9599a3;
   font-weight: 600;
   text-transform: uppercase;
 }
 @media (max-width: 870px) {
   /* line 401, ../sass/_components/_mixins.scss */
-  .page-home .section-form-email input[type="text"]::-webkit-input-placeholder {
+  .page-home .section-form-email .input-text::-webkit-input-placeholder {
     text-align: center;
   }
 }
 /* line 402, ../sass/_components/_mixins.scss */
-.page-home .section-form-email input[type="text"]:-moz-placeholder {
+.page-home .section-form-email .input-text:-moz-placeholder {
   color: #9599a3;
   font-weight: 600;
   text-transform: uppercase;
 }
 @media (max-width: 870px) {
   /* line 402, ../sass/_components/_mixins.scss */
-  .page-home .section-form-email input[type="text"]:-moz-placeholder {
+  .page-home .section-form-email .input-text:-moz-placeholder {
     text-align: center;
   }
 }
 /* line 403, ../sass/_components/_mixins.scss */
-.page-home .section-form-email input[type="text"]::-moz-placeholder {
+.page-home .section-form-email .input-text::-moz-placeholder {
   color: #9599a3;
   font-weight: 600;
   text-transform: uppercase;
 }
 @media (max-width: 870px) {
   /* line 403, ../sass/_components/_mixins.scss */
-  .page-home .section-form-email input[type="text"]::-moz-placeholder {
+  .page-home .section-form-email .input-text::-moz-placeholder {
     text-align: center;
   }
 }
 /* line 404, ../sass/_components/_mixins.scss */
-.page-home .section-form-email input[type="text"]:-ms-input-placeholder {
+.page-home .section-form-email .input-text:-ms-input-placeholder {
   color: #9599a3;
   font-weight: 600;
   text-transform: uppercase;
 }
 @media (max-width: 870px) {
   /* line 404, ../sass/_components/_mixins.scss */
-  .page-home .section-form-email input[type="text"]:-ms-input-placeholder {
+  .page-home .section-form-email .input-text:-ms-input-placeholder {
     text-align: center;
   }
 }
 /* line 212, ../sass/_pages/_home.scss */
-.page-home .section-form-email input[type="text"]:focus {
+.page-home .section-form-email .input-text:focus {
   outline: none;
 }
 /* line 214, ../sass/_pages/_home.scss */
@@ -2970,7 +2970,7 @@ a.bg-danger:hover {
   font-size: 1.42857em;
   opacity: 0;
   transform: translate(0, 10px);
-  transition: all .2s;
+  transition: all .5s;
 }
 @media (max-width: 480px) {
   /* line 248, ../sass/_pages/_home.scss */
@@ -2985,7 +2985,7 @@ a.bg-danger:hover {
   }
 }
 /* line 266, ../sass/_pages/_home.scss */
-.page-home .section-form-email.open input[type="text"] {
+.page-home .section-form-email.open .input-text {
   padding: 0 82px 0 35px;
   width: 433px;
   opacity: 1;

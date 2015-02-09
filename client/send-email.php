@@ -5,12 +5,16 @@
  * Date: 09.02.2015
  * Time: 13:55
  */
+$txt = $_POST['email_or_tel'];
 
-$to = "somebody@example.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: webmaster@example.com" . "\r\n" .
-  "CC: somebodyelse@example.com";
+echo $txt;
 
-mail($to,$subject,$txt,$headers);
+$to = "contact@courseyard.com";
+$subject = "Send from site Courseyard";
+$headers = "From: contact@courseyard.com";
+
+
+//mail($to,$subject,$txt,$headers);
+
+
 ?>
