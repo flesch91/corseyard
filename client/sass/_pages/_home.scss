@@ -34,7 +34,7 @@ $screen-sm-870: 870px;
 
   .header-logo{
     //float: left;
-    padding: 15px 0;
+    padding: 25px 0 0;
 
     @media (max-width: $screen-lg) {
       height: 55px;
@@ -60,6 +60,22 @@ $screen-sm-870: 870px;
 
 
 //  Main links
+  .main-languages-list{
+    float: right;
+    margin-top: -35px;
+    li{
+      display: inline-block;
+      margin-left: 15px;
+      a{
+        display: inline-block;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      &.act{
+        a{color: #7e8496}
+      }
+    }
+  }
   .header-menu{
     margin-top: -35px;
     @media (max-width: $screen-lg) {
@@ -155,9 +171,12 @@ $screen-sm-870: 870px;
         font-size: -em(30,14);
         line-height: 80px;
       }
+      @media (max-width: 680px) {
+        line-height: 35px;
+      }
       @media (max-width: 580px) {
         font-size: -em(25,14);
-        line-height: 50px;
+        line-height: 35px;
       }
       @media (max-width: $screen-xs) {
         font-size: -em(12,14);
@@ -182,6 +201,21 @@ $screen-sm-870: 870px;
       width: 0;
       margin-right: -60px;
 
+      @include placeholder {
+        color: #9599a3;
+        font-weight:600;
+        text-transform: uppercase;
+        line-height: 37px !important;
+        font-size: 18px;
+
+
+        @media (max-width: $screen-sm-870) {
+          text-align: center;
+          line-height: normal;
+          font-size: 14px;
+        }
+      }
+
       @media (max-width: $screen-sm-870) {
         width: 100% !important;
         height: 50px;
@@ -196,20 +230,24 @@ $screen-sm-870: 870px;
         width: 100%;
         height: 50px;
         border-radius: 40px;
-        padding: 0 41px 0 17px !important;
+        padding: 0 17px 0 17px !important;
         font-size: -em(14,14);
         margin-bottom: 10px;
       }
 
-        @include placeholder {
-          color: #9599a3;
-          font-weight:600;
-          text-transform: uppercase;
-          @media (max-width: $screen-sm-870) {
-            text-align: center;
-          }
-        }
+
        &:focus {outline:none;}
+    }
+
+    // fix Firefox palaceholder
+    .input-text{
+      &:-moz-placeholder { /* Firefox 18- */
+        line-height: 75px !important;
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+        line-height: 75px !important;
+      }
     }
     button{
       position: relative;
@@ -260,6 +298,11 @@ $screen-sm-870: 870px;
           opacity: 1 !important;
         }
     }
+    .result{
+      color: #acb0b8;
+      font-size: -em(20,14);
+      transition: all .5s;
+    }
 
     //  .section-form-emai:hover
     &.open{
@@ -278,6 +321,23 @@ $screen-sm-870: 870px;
           transform: translate(0, 0);
       }
     }
+
+    // Write text in input
+    &.focus{
+
+    }
+
+    // Message send
+    &.send{
+      button{
+        color: transparent;
+        &:before{
+          content: '';
+          background: url("../images/icon-svg/checkmark.svg") left top no-repeat;
+        }
+      }
+    }
+
 
   }
   .section-ipad{
@@ -336,6 +396,7 @@ $screen-sm-870: 870px;
         @media (max-width: $screen-sm) {
           float: inherit;
           margin-bottom: 30px;
+          width: 100%;
         }
       }
         .icon-wrapper{
@@ -455,9 +516,13 @@ $screen-sm-870: 870px;
     background: #24252c;
     color: #e7ecee;
     text-align: center;
+    //text-transform: uppercase;
     font-weight: 800;
     line-height: 20px;
-
+    .email{
+      color: #e7ecee;
+      text-decoration: none;
+    }
 
       @media (max-width: $screen-xs) {
         margin-top: 30px;
@@ -474,8 +539,9 @@ $screen-sm-870: 870px;
     }
   }
   .corporation{
-     text-transform: uppercase;
+    text-transform: uppercase;
     margin-bottom: 25px;
+    font-size: 20px;
 
   }
   .footer-socila-list{
@@ -494,27 +560,37 @@ $screen-sm-870: 870px;
       width: 50px;
       height: 50px;
       display: inline-block;
-      background: url("../images/sprite-social-icons.png") left top no-repeat;
-      transition: all .2s;
+      background: left top no-repeat;
+        svg{
+          fill: #E7ECEE;
+          transition: all .2s;
+        }
 
         &.x{
-          background-position: 0 0;
+          svg:hover{
+            fill: #005A5F;
+          }
         }
         &.in{
-          background-position: -50px 0;
+          svg:hover{
+            fill: #0177B5;
+          }
         }
         &.gplus{
-          background-position: -100px 0;
+          svg:hover{
+            fill: #C0463C;
+          }
         }
         &.f{
-          background-position: -150px 0;
+          svg:hover{
+            fill: #3B5998;
+          }
         }
         &.t{
-          background-position: -200px 0;
+          svg:hover{
+            fill: #5EA9DD;
+          }
         }
-      &:hover{
-        opacity: 0.5;
-      }
     }
   }
 }

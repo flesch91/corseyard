@@ -1,16 +1,25 @@
 /**
  * Created by Nazariy.Banakh on 05.02.2015.
  */
-var nameBtn = $('#btn-open'),
+var btnSendEmail = $(".btn-open"),
     sectionFormEmail = $('.section-form-email'),
     sectionServicesBox = $('.section-services-box'),
     sendEmailForm = $("#sendEmailForm"),
+    inputText = $(".input-text"),
     resultsBox = $("#results");
+
 
 $(function(){
 
-  nameBtn.on('click', function(){
+  btnSendEmail.on('click', function(){
     sectionFormEmail.toggleClass('open');
+  });
+  // Change name button
+  inputText.focusin(function(){
+    btnSendEmail.addClass('write-text');
+  });
+  inputText.focusout(function(){
+    btnSendEmail.removeClass('write-text');
   });
 
   $(window).load(function() {
@@ -60,15 +69,57 @@ $(function(){
     setCookie(name, "", { expires: -1 })
   }
 
+
+  btnSendEmail.removeAttr("disabled");
+  inputText.keyup(function(){
+
+    //Validate your form here, example:
+    var validated = true;
+    if(inputText.val().length === 0) validated = false;
+
+    //If form is validated enable form
+    if(validated) {
+        btnSendEmail.removeAttr("disabled");
+        btnSendEmail.html(btnSendEmail.data("target"));
+      }else{
+        btnSendEmail.html(btnSendEmail.attr("title"));
+    }
+  });
+
 // Send email
   sendEmailForm.submit(function( event ) {
+    btnSendEmail.attr("disabled", "disabled");
 
     if(!sectionFormEmail.hasClass("open")){
 
       // Stop form from submitting normally
       event.preventDefault();
 
-      if(!getCookie('send')){
+        var $form = $(this),
+            term = $.trim($form.find("input[name='email_or_tel']").val()),
+            url = $form.attr("action");
+
+        var posting = $.post( url, { email_or_tel: term } );
+
+        posting.done(function() {
+          sectionServicesBox.removeClass('open');
+          btnSendEmail.attr("disabled", "disabled");
+          btnSendEmail.html(btnSendEmail.data("toggle"));
+          setTimeout(function(){
+            btnSendEmail.removeAttr("disabled");
+            sectionFormEmail.find('form')[0].reset();
+            btnSendEmail.html(btnSendEmail.attr("title"));
+          },10000);
+        });
+    }
+    else{
+      // Stop form from submitting normally
+      event.preventDefault();
+      //sectionFormEmail.find('form')[0].reset();
+
+      // Mobile
+      if( $(document).width() <= 870){
+        event.preventDefault();
 
         // Get some values from elements on the page:
         var $form = $(this),
@@ -79,31 +130,22 @@ $(function(){
         var posting = $.post( url, { email_or_tel: term } );
 
         // Put the results in a div
-        posting.done(function( html ) {
-          resultsBox.show().append( html );
+        posting.done(function() {
+          sectionServicesBox.removeClass('open');
+          btnSendEmail.html(btnSendEmail.data("toggle"));
+          btnSendEmail.attr("disabled", "disabled");
+          inputText.hide();
 
           setTimeout(function(){
-            resultsBox.hide();
-          }, 2000);
-
-          setCookie('send',1,'expires');
+            btnSendEmail.removeAttr("disabled");
+            sectionFormEmail.find('form')[0].reset();
+            btnSendEmail.html(btnSendEmail.attr("title"));
+            inputText.show();
+          },10000);
         });
-      }else{
-        resultsBox.show().html('Sorry you sending email!');
-
-        setTimeout(function(){
-          resultsBox.hide();
-        }, 2000);
       }
-
-    } else{
-
-      // Stop form from submitting normally
-      event.preventDefault();
-      sectionFormEmail.find('form')[0].reset();
     }
   });
-
 });
 
 

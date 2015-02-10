@@ -11,10 +11,12 @@ echo $txt;
 
 $to = "contact@courseyard.com";
 $subject = "Send from site Courseyard";
-$headers = "From: contact@courseyard.com";
+
+$headers  = "Content-type: text/html; charset=windows-1251 \r\n";
+$headers .= "From: Courseyard.com <contact@courseyard.com>\r\n";
 
 
-//mail($to,$subject,$txt,$headers);
+mail($to,$subject,$txt,$headers);
 
 
 ?>
