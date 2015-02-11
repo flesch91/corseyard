@@ -3,6 +3,7 @@
 
 // Components
 @import "_components/mixins";
+@import "_components/font-web";
 @import "_components/normalize";
 @import "_components/scaffolding";
 @import "_components/grid";
@@ -15,3 +16,4 @@
 
 // Pages
 @import '_pages/home';
+@import '_pages/partners';
