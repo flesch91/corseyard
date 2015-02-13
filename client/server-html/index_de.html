@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CourseYard</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
     <link href="stylesheets/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -13,49 +14,141 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="page-static">
-<div class="bg-masthead">
-    <header class="clearfix">
+<body class="page-home">
+    <header>
         <div class="navbar-header clearfix">
             <div class="header-logo text-center">
-                <a href="/">
+                <a href="#">
                     <img src="images/logo.svg" alt="logo"/>
                 </a>
             </div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
+            <button type="button" class="hidden navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
+            <ul class="main-languages-list list-unstyled">
+                <li><a href="index.html">EN</a></li>
+                <li class="act"><a href="index_de.html">DE</a></li>
+            </ul>
         </div>
-        <div class="header-menu clearfix collapse" id="nav-collapse" aria-expanded="false">
-            <ul class="languages-list list-unstyled">
-                <li class="act"><a href="index.html">EN</a></li>
-                <li><a href="index_de.html">DE</a></li>
-            </ul>
-            <ul class="menu-list list-unstyled">
-              <li><a href="#">Contacts & Imprint</a></li>
-              <li><a href="#">Who we are he</a></li>
-              <li><a href="#">For Investors</a></li>
-              <li><a href="#">Customers</a></li>
-              <li class="act"><a href="partners.html">Partners</a></li>
-              <li><a href="#">What we dO</a></li>
-            </ul>
+        <div class="hidden">
+            <div class="header-menu collapse" id="nav-collapse" aria-expanded="false">
+                <ul class="languages-list list-unstyled">
+                    <li class="act"><a href="#">EN</a></li>
+                    <li><a href="#">DE</a></li>
+                </ul>
+                <ul class="menu-list list-unstyled">
+                    <li><a href="#">Kontakte & Impressum</a></li>
+                    <li><a href="#">Für Investoren</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Kunden</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Produkte und Services</a></li>
+                    <li><a href="#">CourseYard SaaS</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </header>
-  <section class="name-page">
-    <h1>Partners</h1>
-    <!--<h4></h4>-->
-  </section>
+    <div class="clearfix"></div>
+<div class="container-fluid">
+    <section>
+        <div class="section-name-site">
+            <h1>Course<span>Yard</span></h1>
+            <h3>Paperless Media of Thinking</h3>
+        </div>
+        <div class="section-form-email">
+            <form action="send-email.php" method="post" id="sendEmailForm">
+                <input class="input-text" type="text" name="email_or_tel" placeholder="e-Mail / Telefonnummer" />
+                <button class="btn-open" title="Kontakt zu uns" data-target="Senden" data-toggle="Danke!" >
+                    Kontakt zu uns
+                </button>
+                <!--<p class="text-help">bitte hinterlassen SIe Ihre e-Mail ode Telefonnummer und wir setzen uns mit Ihnen in Kontakt.</p>-->
+                <p class="result"><span id="results"></span></p> 
+            </form>
+        </div>
+    </section>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-offset-1 col-sm-offset-1 col-sm-10 col-md-10">
-      <section class="content-text">
-        <h3>About ELEKS</h3>
-        <p>ELEKS is an innovative global provider of software engineering and quality assurance services dedicated to helping industry leaders and technology challengers convert creative ideas into tangible business value. ELEKS delivers unique and reliable solutions for unparalleled business growth that include Data Science, Mobility, Digital Production and Financial solutions. With an intelligent mix of deep software engineering expertise, domain knowledge and strong scientific and mathematical proficiency, we go beyond traditional problem solving to create additional market advantages for businesses worldwide.</p>
-        <p>Since 1991, our software solutions have contributed to the success of our customers – including Fortune 500 companies – and have become a part of international best practices. ELEKS is a strategic partner with the proven ability to address the customers’ business needs in the most efficient manner. Our delivery organization consists of approximately 1,000 professionals in Eastern Europe and is further strengthened by a local presence in the U.S., Europe and the UK. For more information, please visit: <a href="http://eleks.com" target="_blank">www.eleks.com</a></p>
-        <p>CourseYard and ELEKS’s fruitful cooperation gives us a awesome opportunity to offer our Customers better value and innovations in the field of Media & Publishing, e-Learning and Corporate Education. We are well-equipped to provide full-cycle engineering solutions in Business Analysis, Research and Development, Product Development, Sustenance and Evolving. Our shared expertise covers Cutomer Experience Transformation, Data Driven Solutions, Mobility & Wearables, E-Learning and Content Delivery and Digitalization. CourseYard and ELEKS’s married goals are to enhance our customers’ businesses with innovative technologies and make our cooperation productive and efficient.</p>
-      </section>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="section-ipad">
+                <img src="images/ipad_l.jpg" alt=""/>
+            </div>
+            <div class="section-services-box-shadow">
+                <div class="box-shadow-l"></div>
+                <div class="section-services-box">
+                    <div class="text-center">
+                        <h4 class="services-h4-top">Produkte und Service für Verlage,<br>
+                        Bibliotheken und Bildungseinrichtungen.</h4>
+                    </div>
+                        <div class="sections-services-icon-list">
+                            <ul>
+                                <li class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="icon-wrapper">
+                                        <img src="images/reading.svg" alt=""/>
+                                    </div>
+                                    <div class="name-icon">Lesen</div>
+                                </li>
+                                <li class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="icon-wrapper">
+                                        <img src="images/learning.svg" alt=""/>
+                                    </div>
+                                    <div class="name-icon">Lernen</div>
+                                </li>
+                                <li class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="icon-wrapper">
+                                        <img src="images/coworking.svg" alt=""/>
+                                    </div>
+                                    <div class="name-icon">Co-Working</div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    <div class="text-center">
+                        <h4 class="services-h4-video">Ein Blick in unsere Arbeit und Produktentwicklungen</h4>
+                    </div>
+                    <div class="video-cover text-center">
+                        <div align="center" class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/LgnGdlNa2bo" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+<section>
+    <!--<div class="container-fluid">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-offset-2 col-md-8">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="box-about">-->
+                            <!--<div class="box-about-title"><span>Team</span></div>-->
+                            <!--<div class="box-about-img">-->
+                                <!--<img src="images/img_about_us.jpg" alt="about us"/>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="box-about">-->
+                            <!--<div class="box-about-title"><span>CourseYard und eleks™ als Geschäftspartner</span></div>-->
+                            <!--<div class="box-about-img">-->
+                                <!--<img src="images/img_about_us_2.jpg" alt="about us"/>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="box-about">-->
+                            <!--<div class="box-about-title"><span>CourseYard SaaS</span></div>-->
+                            <!--<div class="box-about-img">-->
+                                <!--<img src="images/img_about_us_3.jpg" alt="about us"/>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</section>
 <footer>
     <div class="footer">
         <ul class="footer-socila-list list-inline">
@@ -129,7 +222,7 @@
         </ul>
         <div class="corporation"><a href="http://eleks.com/company/partnership-and-membership" target="_blank">eleks<sup>&#8482;</sup></a> business partner</div>
         CourseYard Gmbh, Konigstraße 80, 70173 Stuttgart, BW, Germany<br>
-        +49 711 237 35 141<br>
+        +49 711 237 35 141 (Zentrale) , +49 711 237 35 141 (Fax)<br>
         <a href="mailto:contact@courseyard.com" class="email">contact@courseyard.com</a>
         <div class="copyright">copyright © CourseYard GmbH, 2015</div>
     </div>

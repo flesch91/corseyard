@@ -70,9 +70,17 @@ $(function(){
   }
 
 
+  function trimSpaces(){
+    var s = inputText.val();
+    s = s.replace(/(^\s*)|(\s*$)/gi,"");
+    s = s.replace(/[ ]{2,}/gi," ");
+    s = s.replace(/\n /,"\n");
+    inputText.val(s);
+  }
+
   btnSendEmail.removeAttr("disabled");
   inputText.keyup(function(){
-
+    trimSpaces();
     //Validate your form here, example:
     var validated = true;
     if(inputText.val().length === 0) validated = false;

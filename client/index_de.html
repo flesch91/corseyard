@@ -14,38 +14,31 @@
     <![endif]-->
 </head>
 <body class="page-home">
-    <header>
-        <div class="navbar-header clearfix">
-            <div class="header-logo text-center">
-                <a href="#">
-                    <img src="images/logo.svg" alt="logo"/>
-                </a>
-            </div>
-            <button type="button" class="hidden navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
-            <ul class="main-languages-list list-unstyled">
-                <li><a href="index.html">EN</a></li>
-                <li class="act"><a href="index_de.html">DE</a></li>
-            </ul>
+<header class="clearfix">
+    <div class="navbar-header clearfix">
+        <div class="header-logo text-center">
+            <a href="/">
+                <img src="images/logo.svg" alt="logo"/>
+            </a>
         </div>
-        <div class="hidden">
-            <div class="header-menu collapse" id="nav-collapse" aria-expanded="false">
-                <ul class="languages-list list-unstyled">
-                    <li class="act"><a href="#">EN</a></li>
-                    <li><a href="#">DE</a></li>
-                </ul>
-                <ul class="menu-list list-unstyled">
-                    <li><a href="#">Contacts & Imprint</a></li>
-                    <li><a href="#">Who we are he</a></li>
-                    <li><a href="#">For Investors</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">What we dO</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </header>
-    <div class="clearfix"></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
+    </div>
+    <div class="header-menu clearfix collapse" id="nav-collapse" aria-expanded="false">
+        <ul class="languages-list list-unstyled">
+            <li><a href="index.html">EN</a></li>
+            <li class="act"><a href="index_de.html">DE</a></li>
+        </ul>
+        <ul class="menu-list list-unstyled">
+            <li><a href="#">Kontakte & Impressum</a></li>
+            <li><a href="#">Für Investoren</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Kunden</a></li>
+            <li><a href="partners.html">Partner</a></li>
+            <li><a href="#">Produkte und Services</a></li>
+            <li><a href="#">CourseYard SaaS</a></li>
+        </ul>
+    </div>
+</header>
 <div class="container-fluid">
     <section>
         <div class="section-name-site">
@@ -54,11 +47,11 @@
         </div>
         <div class="section-form-email">
             <form action="send-email.php" method="post" id="sendEmailForm">
-                <input class="input-text" type="text" name="email_or_tel" placeholder="Leave email or phone number" />
-                <button class="btn-open" title="Get in touch" data-target="Send" data-toggle="Thank you!" >
-                    Get in touch
+                <input class="input-text" type="text" name="email_or_tel" placeholder="e-Mail / Telefonnummer" />
+                <button class="btn-open" title="Kontakt zu uns" data-target="Senden" data-toggle="Danke!" >
+                    Kontakt zu uns
                 </button>
-                <!--<p class="text-help">Leave us your email and we will contact you.</p>-->
+                <!--<p class="text-help">bitte hinterlassen SIe Ihre e-Mail ode Telefonnummer und wir setzen uns mit Ihnen in Kontakt.</p>-->
                 <p class="result"><span id="results"></span></p>
             </form>
         </div>
@@ -74,8 +67,8 @@
                 <div class="box-shadow-l"></div>
                 <div class="section-services-box">
                     <div class="text-center">
-                        <h4 class="services-h4-top">Services for publishers, learning institution<br>
-                        and corporate learning, libraries.</h4>
+                        <h4 class="services-h4-top">Produkte und Service für Verlage,<br>
+                            Bibliotheken und Bildungseinrichtungen.</h4>
                     </div>
                         <div class="sections-services-icon-list">
                             <ul>
@@ -83,25 +76,25 @@
                                     <div class="icon-wrapper">
                                         <img src="images/reading.svg" alt=""/>
                                     </div>
-                                    <div class="name-icon">Reading</div>
+                                    <div class="name-icon">Lesen</div>
                                 </li>
                                 <li class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="icon-wrapper">
                                         <img src="images/learning.svg" alt=""/>
                                     </div>
-                                    <div class="name-icon">Learning</div>
+                                    <div class="name-icon">Lernen</div>
                                 </li>
                                 <li class="col-xs-12 col-sm-4 col-md-4">
                                     <div class="icon-wrapper">
                                         <img src="images/coworking.svg" alt=""/>
                                     </div>
-                                    <div class="name-icon">Coworking</div>
+                                    <div class="name-icon">Co-Working</div>
                                 </li>
                             </ul>
                             <div class="clearfix"></div>
                         </div>
                     <div class="text-center">
-                        <h4 class="services-h4-video">An interactivity example in the coming e-editions:</h4>
+                        <h4 class="services-h4-video">Ein Blick in unsere Arbeit und Produktentwicklungen</h4>
                     </div>
                     <div class="video-cover text-center">
                         <div align="center" class="responsive-video">
@@ -225,9 +218,7 @@
         <div class="copyright">copyright © CourseYard GmbH, 2015</div>
     </div>
 </footer>
-
 <script src="javascript/jquery.min.js"></script>
-
 <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
 <script type="text/javascript" src="javascript/main.js"></script>
 </body>
