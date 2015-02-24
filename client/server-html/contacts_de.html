@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
+
 	<!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CourseYard landing page">
+    <meta name="description" content="CourseYard Kontakte & Impressum">
  	<meta name="author" content="CourseYard GmbH">
 	<meta name="format-detection" content="telephone=yes" />
 	<meta name="google-site-verification" content="awt-5R_ahMppZbQnliKLA626h0nB5DzHKtiCxAkj4P8" />
@@ -26,136 +27,55 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="page-home">
+<body class="page-static">
 <!-- Підключити Google Analystics=) -->
 <?php include_once("analyticstracking.php") ?>
 
-<header class="clearfix">
-    <div class="navbar-header clearfix">
-        <div class="header-logo text-center">
-            <a href="/">
-                <img src="images/logo.svg" alt="logo"/>
-            </a>
-        </div>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
-    </div>
-    <div class="header-menu clearfix collapse" id="nav-collapse" aria-expanded="false">
-        <ul class="languages-list list-unstyled">
-            <li><a href="index.html">EN</a></li>
-            <li class="act"><a href="index_de.html">DE</a></li>
-        </ul>
-        <ul class="menu-list list-unstyled">
-            <li><a href="contacts_de.html">Kontakte & Impressum</a></li>
-           <!--  <li><a href="#">Für Investoren</a></li> -->
-           <!--  <li><a href="#">Team</a></li> -->
-           <!--  <li><a href="#">Kunden</a></li> -->
-            <li><a href="partners_de.html">Partner</a></li>
-           <!--  <li><a href="#">Produkte und Services</a></li> -->
-           <!--  <li><a href="#">CourseYard SaaS</a></li> -->
-        </ul>
-    </div>
-</header>
-<div class="container-fluid">
-    <section>
-        <div class="section-name-site">
-            <h1>Course<span>Yard</span></h1>
-            <h3>Paperless Media of Thinking</h3>
-        </div>
-        <div class="section-form-email">
-            <form action="send-email.php" method="post" id="sendEmailForm">
-                <input class="input-text" type="text" name="email_or_tel" placeholder="e-Mail / Telefonnummer" />
-                <button class="btn-open" title="Kontakt zu uns" data-target="Senden" data-toggle="Danke!" >
-                    Kontakt zu uns
-                </button>
-                <!--<p class="text-help">bitte hinterlassen SIe Ihre e-Mail ode Telefonnummer und wir setzen uns mit Ihnen in Kontakt.</p>-->
-                <p class="result"><span id="results"></span></p>
-            </form>
-        </div>
-    </section>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-            <div class="section-ipad">
-                <img src="images/ipad_l.jpg" alt=""/>
+<div class="bg-masthead">
+    <header class="clearfix">
+        <div class="navbar-header clearfix">
+            <div class="header-logo text-center">
+                <a href="/">
+                    <img src="images/logo.svg" alt="logo"/>
+                </a>
             </div>
-            <div class="section-services-box-shadow">
-                <div class="box-shadow-l"></div>
-                <div class="section-services-box">
-                    <div class="text-center">
-                        <h4 class="services-h4-top">Produkte und Services für Verlage,<br>
-                            Bibliotheken und Bildungseinrichtungen.</h4>
-                    </div>
-                        <div class="sections-services-icon-list">
-                            <ul>
-                                <li class="col-xs-12 col-sm-4 col-md-4">
-                                    <div class="icon-wrapper">
-                                        <img src="images/reading.svg" alt=""/>
-                                    </div>
-                                    <div class="name-icon">Lesen</div>
-                                </li>
-                                <li class="col-xs-12 col-sm-4 col-md-4">
-                                    <div class="icon-wrapper">
-                                        <img src="images/learning.svg" alt=""/>
-                                    </div>
-                                    <div class="name-icon">Lernen</div>
-                                </li>
-                                <li class="col-xs-12 col-sm-4 col-md-4">
-                                    <div class="icon-wrapper">
-                                        <img src="images/coworking.svg" alt=""/>
-                                    </div>
-                                    <div class="name-icon">Co-Working</div>
-                                </li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>
-                    <div class="text-center">
-                        <h4 class="services-h4-video">Ein Blick in unsere Arbeit und Produktentwicklungen</h4>
-                    </div>
-                    <div class="video-cover text-center">
-                        <div align="center" class="responsive-video">
-                            <iframe src="https://www.youtube.com/embed/LgnGdlNa2bo" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
         </div>
-    </div>
+        <div class="header-menu clearfix collapse" id="nav-collapse" aria-expanded="false">
+            <ul class="languages-list list-unstyled">
+                <li><a href="contacts_en.html">EN</a></li>
+                <li class="act"><a href="contacts_de.html">DE</a></li>
+            </ul>
+            <ul class="menu-list list-unstyled">
+              <li class="act"><a href="#">Kontakte & Impressum</a></li>
+              <!-- <li><a href="#">For Investors</a></li> -->
+              <!-- <li><a href="#">Team</a></li> -->
+              <!-- <li><a href="#">Customers</a></li> -->
+              <li><a href="partners_de.html">Partner</a></li>
+              <!-- <li><a href="#">What we do</a></li> -->
+              <!-- <li><a href="#">CourseYard SaaS</a></li>   -->            
+              
+              
+            </ul>
+        </div>
+    </header>
+  <section class="name-page">
+    <h1>Kontakte & Impressum</h1>
+    <!--<h4></h4>-->
+  </section>
 </div>
-<section>
-    <!--<div class="container-fluid">-->
-        <!--<div class="row">-->
-            <!--<div class="col-md-offset-2 col-md-8">-->
-                <!--<div class="row">-->
-                    <!--<div class="col-md-4">-->
-                        <!--<div class="box-about">-->
-                            <!--<div class="box-about-title"><span>About us</span></div>-->
-                            <!--<div class="box-about-img">-->
-                                <!--<img src="images/img_about_us.jpg" alt="about us"/>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-4">-->
-                        <!--<div class="box-about">-->
-                            <!--<div class="box-about-title"><span>What we do</span></div>-->
-                            <!--<div class="box-about-img">-->
-                                <!--<img src="images/img_about_us_2.jpg" alt="about us"/>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="col-md-4">-->
-                        <!--<div class="box-about">-->
-                            <!--<div class="box-about-title"><span>CourseYard SaaS</span></div>-->
-                            <!--<div class="box-about-img">-->
-                                <!--<img src="images/img_about_us_3.jpg" alt="about us"/>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-</section>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-offset-1 col-sm-offset-1 col-sm-10 col-md-10">
+      <section class="content-text">
+        <h3>CourseYard büro</h3>
+        <p>CourseYard GmbH, Königstraße 80, 70173 Stuttgart, Deutschland.</p>
+        <p>+49 711 237 35 141 (Zentrale) , +49 711 237 35 141 (Fax)</p>
+        <p>contact[at]courseyard.com</p>
+      </section>
+    </div>
+  </div>
+</div>
 <footer>
     <div class="footer">
         <ul class="footer-socila-list list-inline">
@@ -230,11 +150,13 @@
         <div class="corporation"><a href="http://eleks.com/company/partnership-and-membership" target="_blank">eleks<sup>&#8482;</sup></a> business partner</div>
         CourseYard Gmbh, Königstraße 80, 70173 Stuttgart, BW, Germany<br>
         +49 711 237 35 141 (tel), +49 711 237 35 141 (fax)<br>
-        <a href="mailto:contact@courseyard.com" class="email">contact@courseyard.com</a>
+        <a href="mailto:contact@courseyard.com" class="email">contact[at]courseyard.com</a>
         <div class="copyright">copyright © CourseYard GmbH, 2015</div>
     </div>
 </footer>
+
 <script src="javascript/jquery.min.js"></script>
+
 <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
 <script type="text/javascript" src="javascript/main.js"></script>
 </body>

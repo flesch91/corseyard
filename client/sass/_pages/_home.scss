@@ -2,7 +2,9 @@
 // ===================
 $screen-sm-870: 870px;
 
-
+.body-container{
+  margin: 80px 0 100px;
+}
 .page-home{
    padding-top: 130px;
 }
@@ -80,8 +82,11 @@ header{
           padding: 10px;
           text-align: center;
         }
-      &.act a{
-          color: #7e8496
+      &.act a,
+      &.act span{
+          color: #7e8496;
+          font-weight: 800;
+          text-transform: uppercase;
         }
       }
     }
@@ -114,8 +119,11 @@ header{
         a {
           padding: 12px 0;
         }
-        &.act a{
+        &.act a,
+        &.act span{
           background: #c2ced3;
+          font-weight: 800;
+          text-transform: uppercase;
         }
       }
     }

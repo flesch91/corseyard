@@ -1,0 +1,87 @@
+.person{
+  font-size: 16px;
+  margin-bottom: 40px;
+  min-height: 500px;
+  @media (max-width: $screen-lg) {
+    min-height: inherit;
+  }
+  &-img{
+    overflow: hidden;
+    outline: 1px solid transparent;
+    width: 66%;
+    margin: 0 auto 20px;
+    @include border-radius(50%);
+      img{
+        width: 100%;
+        text-align: center;
+      }
+  }
+  &-title{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+  &-position{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 23px;
+  }
+  &-description{
+    font-weight: 300;
+    text-align: center;
+  }
+  &-social{
+    text-align: center;
+    @include list-unstyled();
+    li{
+      display: inline-block;
+    }
+    a {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      background: left top no-repeat;
+      svg {
+        fill: #4f5662;
+        transition: all .2s;
+      }
+      &.x{
+        svg:hover{
+          fill: #005A5F;
+        }
+      }
+      &.in{
+        svg:hover{
+          fill: #0177B5;
+        }
+      }
+      &.gplus{
+        svg:hover{
+          fill: #C0463C;
+        }
+      }
+      &.f{
+        svg:hover{
+          fill: #3B5998;
+        }
+      }
+      &.t{
+        svg:hover{
+          fill: #5EA9DD;
+        }
+      }
+      &.cb{
+        svg:hover{
+          fill: #2392a7;
+        }
+      }
+      &.ng{
+        svg:hover{
+          fill: #333;
+        }
+      }
+    }
+  }
+}

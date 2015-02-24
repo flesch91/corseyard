@@ -7,6 +7,9 @@
   @media (max-width: $screen-xs) {
     background-size: cover;
   }
+  &.bg-contacts{
+    background: url("../images/bg-contacts.jpg") center center no-repeat;
+  }
 }
 
 // Name page
@@ -47,7 +50,7 @@
   font-size: 20px;
   line-height: 30px;
   color: #1f1f1f;
-  margin: 80px 0 100px;
+  //margin: 80px 0 100px;
   p{
     margin:  0 0 40px;
     @media (max-width: $screen-sm) {text-align: justify}

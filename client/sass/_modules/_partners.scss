@@ -1,0 +1,17 @@
+.partners{
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  @include border-radius(50%);
+    .box-about-img-element{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: center center no-repeat;
+    }
+  &:hover{
+    .box-about-title{
+      @include opacity(0);
+    }
+  }
+}

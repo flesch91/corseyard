@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CourseYard landing page">
+ 	<meta name="author" content="CourseYard GmbH">
+	<meta name="format-detection" content="telephone=yes" />
+	<meta name="google-site-verification" content="awt-5R_ahMppZbQnliKLA626h0nB5DzHKtiCxAkj4P8" />
+	<!-- /META -->
+	
     <title>CourseYard</title>
+    
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600' rel='stylesheet' type='text/css'>
+
+	<!-- FONTS -->
+
+	<!-- STYLES -->
     <link href="stylesheets/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -15,38 +28,35 @@
     <![endif]-->
 </head>
 <body class="page-home">
-    <header>
-        <div class="navbar-header clearfix">
-            <div class="header-logo text-center">
-                <a href="#">
-                    <img src="images/logo.svg" alt="logo"/>
-                </a>
-            </div>
-            <button type="button" class="hidden navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
-            <ul class="main-languages-list list-unstyled">
-                <li class="act"><a href="index.html">EN</a></li>
-                <li><a href="index_de.html">DE</a></li>
-            </ul>
+<!-- Підключити Google Analystics=) -->
+<?php include_once("analyticstracking.php") ?>
+
+<header class="clearfix">
+    <div class="navbar-header clearfix">
+        <div class="header-logo text-center">
+            <a href="/">
+                <img src="images/logo.svg" alt="logo"/>
+            </a>
         </div>
-        <div class="hidden">
-            <div class="header-menu collapse" id="nav-collapse" aria-expanded="false">
-                <ul class="languages-list list-unstyled">
-                    <li class="act"><a href="index.html">EN</a></li>
-                    <li><a href="index_de.html">DE</a></li>
-                </ul>
-                <ul class="menu-list list-unstyled">
-                    <li><a href="#">Contacts & Imprint</a></li>
-                    <li><a href="#">Who we are he</a></li>
-                    <li><a href="#">For Investors</a></li>
-                    <li><a href="#">Customers</a></li>
-                    <li><a href="#">Partners</a></li>
-                    <li><a href="#">What we dO</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </header>
-    <div class="clearfix"></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse"></button>
+    </div>
+    <div class="header-menu clearfix collapse" id="nav-collapse" aria-expanded="false">
+        <ul class="languages-list list-unstyled">
+            <li class="act"><a href="index.html">EN</a></li>
+            <li><a href="index_de.html">DE</a></li>
+        </ul>
+        <ul class="menu-list list-unstyled">
+            <li><a href="contacts_en.html">Contacts & Imprint</a></li>
+            <!--<li><a href="#">For Investors</a></li> -->
+            <!--<li><a href="team_en.html">Team</a></li> -->
+            <!--<li><a href="#">Customers</a></li> -->
+            <li><a href="partners_en.html">Partners</a></li>
+            <!--<li><a href="#">What we do</a></li> -->
+            <!--<li><a href="#">CourseYard SaaS</a></li> -->
+        </ul>
+    </div>
+</header>
+<div class="clearfix"></div>
 <div class="container-fluid">
     <section>
         <div class="section-name-site">
@@ -220,7 +230,7 @@
             </a></li>
         </ul>
         <div class="corporation"><a href="http://eleks.com/company/partnership-and-membership" target="_blank">eleks<sup>&#8482;</sup></a> business partner</div>
-        CourseYard Gmbh, Konigstraße 80, 70173 Stuttgart, BW, Germany<br>
+        CourseYard Gmbh, Königstraße 80, 70173 Stuttgart, BW, Germany<br>
         +49 711 237 35 141 (tel), +49 711 237 35 141 (fax)<br>
         <a href="mailto:contact@courseyard.com" class="email">contact@courseyard.com</a>
         <div class="copyright">copyright © CourseYard GmbH, 2015</div>
